@@ -1,0 +1,52 @@
+html {
+    text-align: center;
+    font-family: monospace;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#calc{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#container{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: absolute;
+    width: 400px;
+}
+
+button{
+    height: 60px;
+}
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+}
+
+.screen {
+    width: 100%;
+    font-size: 5rem;
+    height: 80px;
+    border: none;
+    background-color: #252525;
+    color: #fff;
+    text-align: right;
+    padding-right: 20px;
+    padding-left: 10px;
+}
+
+.equal-sign{
+    grid-row-start: 2;
+    grid-row-end: 6;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    height: 100%;
+}
